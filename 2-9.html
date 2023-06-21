@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+    <script>
+let HAIRETSU = [];
+for (let step = 1; step < 101; step++) {
+  // 値が 1 から 100 まで計 100 回実行される
+  console.log(step);
+  HAIRETSU.push(step);
+}
+
+let b3 = HAIRETSU.filter(e => e % 3 == 0);
+console.log(b3);
+
+let b5 = HAIRETSU.filter(e => e % 5 == 0);
+console.log(b5)
+    </script>
+</body>
+</html>

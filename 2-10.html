@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+    <script>
+// オブジェクトの生成
+let りんご = {        // 「りんご」オブジェクト
+    color: 'red',
+    size: 15,
+    weight: '500'
+};
+
+let みかん = {        // 「みかん」オブジェクト
+    color: 'orange',
+    size: 5,
+    weight: '100'
+};
+
+let ぶどう = {      // 「ぶどう」オブジェクト
+    color: 'purple',
+    size: 20,
+    weight: '300'
+};
+
+// 三つのオブジェクトを配列に保存
+let fruits = [りんご, みかん, ぶどう];
+let fruits_weights = [];
+let total = 0;
+
+for(const key in fruits){
+    console.log(key);
+
+    console.log(fruits[key]);
+
+    console.log(fruits[key].weight);
+
+    console.log(`重さは; ${fruits[key].weight}`);
+
+    let weight = Number(fruits[key].weight);
+    fruits_weights.push(weight);
+
+    console.log(fruits_weights);
+
+    total += weight;
+
+}
+
+console.log(total);
+
+    </script>
+</body>
+</html>
